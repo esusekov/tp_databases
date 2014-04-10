@@ -2,3 +2,4 @@
 *.idea
 #Compiled python files
 *.pyc
+*.py~
