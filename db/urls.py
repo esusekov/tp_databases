@@ -7,6 +7,8 @@ urlpatterns = patterns('',
     
     url(r'^admin/', include(admin.site.urls)),
 
+    url(r'^db/api/clear/$', 'api.views.dbclear.clear', name='db_clear'),
+
     url(r'^db/api/user/create/$', 'api.views.user.create', name='user_create'),
     url(r'^db/api/user/details/$', 'api.views.user.details', name='user_details'),
     url(r'^db/api/user/follow/$', 'api.views.user.follow', name='user_follow'),
